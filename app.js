@@ -11,7 +11,7 @@ if (typeof __metadata !== "function") __metadata = function (k, v) {
 };
 /// <reference path="../typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
-var MyService_1 = require('MyService.js');
+var MyService_1 = require('MyService');
 var App = (function () {
     function App(service) {
         var _this = this;
@@ -30,7 +30,7 @@ var App = (function () {
         angular2_1.View({
             template: "<span *ng-if=\"name\">Hello, {{name}}!</span>",
             directives: [angular2_1.NgIf]
-        }), 
+        }),
         __metadata('design:paramtypes', [MyService_1.MyService])
     ], App);
     return App;
